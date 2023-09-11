@@ -1,0 +1,34 @@
+.container {
+  text-align: left;
+  background-color: rgba(0, 68, 170, 0.968);
+}
+
+.grid-title {
+  margin: 0;
+  color: white;
+  padding: 5px 0 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  padding: 0;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid grey;
+  color: white;
+}
+
+.light-blue {
+  background-color: #0163b3;
+  z-index: 1;
+}
+
+.dark-blue {
+  background-color: #0163b3b7;
+  z-index: 0;
+}

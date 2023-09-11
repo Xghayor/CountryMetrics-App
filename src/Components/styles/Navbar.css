@@ -1,0 +1,66 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgba(0, 68, 170, 0.968);
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-center {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.search-bar {
+  background-color:rgb(128, 164, 241,0.3);
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Take up all available space */
+}
+
+input[type="text"] {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+}
+
+input::placeholder {
+  color: rgb(201, 198, 198);
+}
+
+.icons {
+  margin-left: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white; /* Set the icon color to white */
+}
+
+.icon{
+  cursor: pointer;
+}
