@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(89, 162, 250, 0.9);
+  background-color: rgba(46, 128, 228, 0.772);
   padding: 20px; 
 }
 
@@ -15,13 +15,10 @@
 
 
 .hero-image img {
-  max-width: 40%; 
+  max-width: 80%; 
   height: auto;
-  border-radius: 50%;
-  margin-left: 200px;
-  animation: rotate 70s linear infinite;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   opacity: 0.8;
+  margin-left: 10%;
 }
 
 .hero-content {
@@ -41,11 +38,3 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}

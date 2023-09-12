@@ -1,6 +1,6 @@
 .container {
   text-align: left;
-  background-color: rgba(0, 68, 170, 0.968);
+  background-color: rgba(0, 68, 170, 0.801);
 }
 
 .grid-title {
@@ -11,7 +11,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   list-style: none;
   padding: 0;
 }
@@ -24,11 +24,9 @@
 }
 
 .light-blue {
-  background-color: #0163b3;
-  z-index: 1;
+  background-color: rgba(48, 61, 145, 0.838);
 }
 
 .dark-blue {
-  background-color: #0163b3b7;
-  z-index: 0;
+  background-color: rgba(48, 48, 150, 0.582);
 }
