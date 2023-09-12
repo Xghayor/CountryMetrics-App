@@ -1,57 +1,56 @@
 .country-statistics {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    color: #333;
-    background-color: rgba(46, 128, 228, 0.772);
-  }
-  
-  .country-card {
-    border: 1px solid grey;
-  }
-  
-  .light-color {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-    background-color: rgba(37, 56, 131, 0.527);
-    margin: 0;
-    height: 60px;
-    color: white;
-    padding: 20px 0px 0px 20px;
-  }
-  
-  .dark-color {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-    background-color: rgba(19, 19, 165, 0.683);
-    margin: 0;
-    height: 60px;
-    color: white;
-    padding: 20px 0px 0px 20px;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: rgba(46, 128, 228, 0.772);
+}
 
-  .stats-heading{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
-    margin: 0;
-    color: white;
-    background-color: rgb(0, 68, 170);
-    padding: 5px 0 5px 5px;
-    z-index: 999;
-    box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.2);
-  }
+.country-card {
+  border: 1px solid grey;
+}
+
+.light-color {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  background-color: rgba(37, 56, 131, 0.527);
+  margin: 0;
+  height: 60px;
+  color: white;
+  padding: 20px 0 0 20px;
+}
+
+.dark-color {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  background-color: rgba(19, 19, 165, 0.683);
+  margin: 0;
+  height: 60px;
+  color: white;
+  padding: 20px 0 0 20px;
+}
+
+.stats-heading {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 24px;
+  margin: 0;
+  color: white;
+  background-color: rgb(0, 68, 170);
+  padding: 5px 0 5px 5px;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.2);
+}
 
 .loader {
-    border: 6px solid #f3f3f3;
-    border-top: 6px solid #3498db;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin: 5% auto;
-    animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5% auto;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

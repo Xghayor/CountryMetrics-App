@@ -8,7 +8,7 @@
   background-color: rgb(0, 68, 170);
   padding: 5px 0 5px 20px;
   z-index: 999;
-  box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.2);
 }
 
 .grid {
@@ -22,8 +22,7 @@
 }
 
 .grid-item {
-  border: 1px solid grey;
-  width: calc(33.33% ); 
+  width: calc(33.33%);
   height: 300px;
   position: relative;
   overflow: hidden;
@@ -33,13 +32,13 @@
 .grid-item.light-blue {
   background-color: rgba(0, 68, 170, 0.553);
   z-index: 1;
-  box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.3);
 }
 
 .grid-item.dark-blue {
-  background-color: #276c9a; 
+  background-color: #276c9a;
   z-index: 0;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.598); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.598);
 }
 
 .grid-item-box {
@@ -77,7 +76,6 @@
   transform: translateX(5px);
 }
 
-
 .country-name {
   position: absolute;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -99,9 +97,9 @@
     margin: 0;
     height: 200px;
   }
+
   .country-name {
     bottom: 30px;
     right: 10px;
-    
   }
 }

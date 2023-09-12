@@ -1,19 +1,17 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  inputValue: '', 
+  inputValue: '',
 };
 
 const inputSlice = createSlice({
   name: 'Input',
   initialState,
   reducers: {
-    setInputValue: (state, action) => {
-      return {
-        ...state,
-        inputValue: action.payload,
-      };
-    },
+    setInputValue: (state, action) => ({
+      ...state,
+      inputValue: action.payload,
+    }),
   },
 });
 

@@ -2,31 +2,30 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const initialState = {
-    loading: false,
-    countries: [],
-    error: ''
-}
+  loading: false,
+  countries: [],
+  error: '',
+};
 
 export const countryData = createAsyncThunk(
-  'countries/fetchData',
+  'countries/getData',
   async (country) => {
     const apiKey = '3DPT6zJuhp6ivWqildtvnA==aOy3cSTtq3BUgEhT';
     const apiUrl = `https://api.api-ninjas.com/v1/country?name=${country}`;
 
-    try {
-      const response = await axios.get(apiUrl, {
-        headers: {
-          'X-Api-Key': apiKey,
-        },
-      });
+    const response = await axios.get(apiUrl, {
+      headers: {
+        'X-Api-Key': apiKey,
+      },
+    });
 
-      return response.data;
-    } catch (error) {
-      throw error;
+    if (response.status !== 200) {
+      throw new Error('Network response was not ok');
     }
-  }
-);
 
+    return response.data;
+  },
+);
 
 const CountriesSlice = createSlice({
   name: 'Countries',
