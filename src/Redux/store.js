@@ -1,13 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import countryReducer from './Countries/countriesSlice'
-import inputReducer from '../Redux/Search/inputSlice';
-
+import countryReducer from './Countries/countriesSlice';
+import inputReducer from './Search/inputSlice';
 
 const store = configureStore({
-    reducer:{
-      countries: countryReducer,
-      input: inputReducer,
-    },
-  })
+  reducer: {
+    countries: countryReducer,
+    input: inputReducer,
+  },
+});
 
-  export default store;
+export default store;

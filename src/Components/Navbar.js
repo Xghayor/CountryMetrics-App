@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-left">
         <Link to="/">
-          <button className="nav-btn">
+          <button className="nav-btn" type="button">
             <IoIosArrowBack />
           </button>
         </Link>
@@ -29,11 +29,11 @@ const Navbar = () => {
             type="text"
             placeholder="Enter country name"
             value={searchValue}
-            name='names'
+            name="names"
             onChange={(e) => setSearchValue(e.target.value)}
           />
           <Link to={`/country/${searchValue}`}>
-            <button type='button' onClick={handleSearch} className='search-button'>
+            <button type="button" onClick={handleSearch} className="search-button">
               <FaSearch className="icon" />
             </button>
           </Link>
