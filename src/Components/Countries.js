@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles/Countries.css';
-import sharedImage from './assets/France.png'
+import sharedImage from './assets/France.png';
+import { FaArrowRight } from 'react-icons/fa';
 
 const Countries = () => {
   const countriesList = [
-    'United States',
+    'Mexico',
     'France',
     'Canada',
     'Germany',
@@ -15,15 +16,17 @@ const Countries = () => {
 
   return (
     <div className="container">
-      <h4 className='grid-title'>STATS BY COUNTRY</h4>
+      <h4 className="grid-title">STATS BY COUNTRY</h4>
       <ul className="grid">
         {countriesList.map((countryName, index) => (
           <li className={`grid-item ${index % 2 === 0 ? 'light-blue' : 'dark-blue'}`} key={index}>
-          <img src={sharedImage} alt="Shared Flag" />
-            {countryName}
-            <Link to={`/country/${countryName}`}>
-              <button type='button'>></button>
-            </Link>
+            <div className="grid-item-box">
+              <img src={sharedImage} alt="Shared Flag" className="country-image" />
+              <Link to={`/country/${countryName}`} className="view-button">
+                <FaArrowRight />
+              </Link>
+              <div className="country-name">{countryName}</div>
+            </div>
           </li>
         ))}
       </ul>

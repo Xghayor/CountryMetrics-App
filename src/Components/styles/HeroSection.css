@@ -33,8 +33,27 @@
   color: white; 
   text-transform: uppercase; 
   text-align: center; 
-  margin-right: 300px;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+
+@media (max-width: 600px) {
+ 
+  .hero-image {
+    padding: 0; 
+  }
+
+  .hero-image img {
+    max-width: 100%; 
+    margin-left: 0; 
+  }
+
+  .hero-content {
+    padding: 10px; 
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+}
