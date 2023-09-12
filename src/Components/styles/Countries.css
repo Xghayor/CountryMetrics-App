@@ -1,32 +1,107 @@
 .container {
   text-align: left;
-  background-color: rgba(0, 68, 170, 0.801);
 }
 
 .grid-title {
   margin: 0;
   color: white;
-  padding: 5px 0 0 20px;
+  background-color: rgb(0, 68, 170);
+  padding: 5px 0 5px 20px;
+  z-index: 999;
+  box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.2);
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: rgba(64, 111, 181, 0.669);
+  margin: 0;
 }
 
 .grid-item {
-  padding: 20px;
-  text-align: center;
   border: 1px solid grey;
+  width: calc(33.33% ); 
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.grid-item.light-blue {
+  background-color: rgba(0, 68, 170, 0.553);
+  z-index: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.3);
+}
+
+.grid-item.dark-blue {
+  background-color: #276c9a; 
+  z-index: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.598); 
+}
+
+.grid-item-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.country-image {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.view-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
   color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
 }
 
-.light-blue {
-  background-color: rgba(48, 61, 145, 0.838);
+.view-button:hover {
+  transform: translateX(5px);
 }
 
-.dark-blue {
-  background-color: rgba(48, 48, 150, 0.582);
+
+.country-name {
+  position: absolute;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  bottom: 50px;
+  right: 40px;
+  color: white;
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    justify-content: center;
+  }
+
+  .grid-item {
+    width: calc(50%);
+    margin: 0;
+    height: 200px;
+  }
+  .country-name {
+    bottom: 30px;
+    right: 10px;
+    
+  }
 }

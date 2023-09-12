@@ -12,16 +12,21 @@ export const countryData = createAsyncThunk(
   async (country) => {
     const apiKey = '3DPT6zJuhp6ivWqildtvnA==aOy3cSTtq3BUgEhT';
     const apiUrl = `https://api.api-ninjas.com/v1/country?name=${country}`;
-    
-    const response = await axios.get(apiUrl, {
-      headers: {
-        'X-Api-Key': apiKey,
-      },
-    });
 
-    return response.data;
+    try {
+      const response = await axios.get(apiUrl, {
+        headers: {
+          'X-Api-Key': apiKey,
+        },
+      });
+
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
   }
 );
+
 
 const CountriesSlice = createSlice({
   name: 'Countries',
