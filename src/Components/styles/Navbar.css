@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:rgba(0, 68, 170, 0.968);
+  background-color:rgba(0, 68, 170, 0.801);
   padding: 10px 20px;
   color: white;
   font-size: 18px;
@@ -33,7 +33,7 @@
 }
 
 .search-bar {
-  background-color:rgb(128, 164, 241,0.3);
+  background-color:rgba(128, 164, 241, 0.24);
   border: none;
   border-radius: 20px;
   padding: 8px 16px;
@@ -58,9 +58,21 @@ input::placeholder {
   margin-left: 10px;
   font-size: 24px;
   cursor: pointer;
-  color: white; /* Set the icon color to white */
+  color: white;
 }
 
 .icon{
   cursor: pointer;
+}
+
+
+.search-button {
+  color: white;
+  border: none;
+  background-color: transparent;
+  padding: 0; 
+  &:active {
+    transform: translateY(2px); 
+    box-shadow: none;
+  }
 }
