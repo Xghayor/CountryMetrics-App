@@ -52,9 +52,9 @@
 
 <br>
 
-- [View Video](https://www.loom.com/share/0bdff48b098c44bbbf987cc75468ef49?sid=6def48e8-8781-4516-b909-20dc76a660aa)
+- [View Video](https://www.loom.com/share/38cc44b0efd94ec787eacac11f29bf8b?sid=7d7bea9b-d739-4259-8689-0ee4815c7e65)
 
-- [View Live Demo] (https://country-metrics-app.vercel.app/)
+- [View Live Demo](https://country-metrics-app.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
