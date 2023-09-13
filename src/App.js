@@ -7,8 +7,6 @@ import HeroSection from './Components/HeroSection';
 import Countries from './Components/Countries';
 import CountryStats from './Components/CountryStats';
 
-
-
 const App = () => (
   <Router>
     <Navbar />
