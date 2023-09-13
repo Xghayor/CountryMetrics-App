@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/CountryMetrics-App/static/css/main.e390927d.css",
-    "main.js": "/CountryMetrics-App/static/js/main.aab22429.js",
-    "static/media/maps.png": "/CountryMetrics-App/static/media/maps.493a7d5a87165be28aa6.png",
-    "index.html": "/CountryMetrics-App/index.html",
-    "main.e390927d.css.map": "/CountryMetrics-App/static/css/main.e390927d.css.map",
-    "main.aab22429.js.map": "/CountryMetrics-App/static/js/main.aab22429.js.map"
+    "main.css": "/static/css/main.e390927d.css",
+    "main.js": "/static/js/main.f2a0f9d5.js",
+    "static/media/maps.png": "/static/media/maps.493a7d5a87165be28aa6.png",
+    "index.html": "/index.html",
+    "main.e390927d.css.map": "/static/css/main.e390927d.css.map",
+    "main.f2a0f9d5.js.map": "/static/js/main.f2a0f9d5.js.map"
   },
   "entrypoints": [
     "static/css/main.e390927d.css",
-    "static/js/main.aab22429.js"
+    "static/js/main.f2a0f9d5.js"
   ]
 }
