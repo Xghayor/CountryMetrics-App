@@ -54,7 +54,7 @@
 
 - [View Video](https://www.loom.com/share/0bdff48b098c44bbbf987cc75468ef49?sid=6def48e8-8781-4516-b909-20dc76a660aa)
 
-- [View Live Demo] (https://xghayor.github.io/CountryMetrics-App/)
+- [View Live Demo] (https://country-metrics-app.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,7 +139,7 @@ Feel free to check the [issues page](https://github.com/Xghayor/CountryMetrics-A
 If you like my page please show your support and give this page a star!
 <br>
 <br>
-[![Star](https://github.com/Xghayor/CountryMetrics-App)]
+[Star](https://github.com/Xghayor/CountryMetrics-App)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
