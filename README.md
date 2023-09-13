@@ -54,7 +54,7 @@
 
 - [View Video](https://www.loom.com/share/0bdff48b098c44bbbf987cc75468ef49?sid=6def48e8-8781-4516-b909-20dc76a660aa)
 
-- 
+- [View Live Demo] (https://xghayor.github.io/CountryMetrics-App/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
