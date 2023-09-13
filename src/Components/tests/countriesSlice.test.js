@@ -22,7 +22,7 @@ describe('countryData async thunk', () => {
 
     await store.dispatch(countryData(countryName));
 
-    const dispatchedActions = store.getActions().map(action => action.type);
+    const dispatchedActions = store.getActions().map((action) => action.type);
     expect(dispatchedActions).toEqual(expectedActions);
   });
 
@@ -33,7 +33,7 @@ describe('countryData async thunk', () => {
     });
 
     const store = mockStore({});
-    const countryName = 'CountryName'; 
+    const countryName = 'CountryName';
 
     const expectedActions = [
       countryData.pending.type,
@@ -41,7 +41,7 @@ describe('countryData async thunk', () => {
     ];
 
     await store.dispatch(countryData(countryName));
-    const dispatchedActions = store.getActions().map(action => action.type);
+    const dispatchedActions = store.getActions().map((action) => action.type);
     expect(dispatchedActions).toEqual(expectedActions);
   });
 });
