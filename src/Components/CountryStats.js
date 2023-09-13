@@ -35,67 +35,66 @@ const CountryStats = () => {
       <h5 className="stats-heading">
         Country Statistics for
         {' '}
-        {' '}
         {searchTerm}
       </h5>
       {countries.map((country) => (
         <div key={country.name} className="country-card">
-          <p className="light-color">
-            GDP:
-            {country.gdp}
-          </p>
-          <p className="dark-color">
-            Sex Ratio:
-            {country.sex_ratio}
-          </p>
-          <p className="light-color">
-            Surface Area:
-            {country.surface_area}
-          </p>
-          <p className="dark-color">
-            Life Expectancy (Male):
-            {country.life_expectancy_male}
-          </p>
-          <p className="light-color">
-            Unemployment Rate:
-            {country.unemployment}
-          </p>
-          <p className="dark-color">
-            Imports:
-            {country.imports}
-          </p>
-          <p className="light-color">
-            Homicide Rate:
-            {country.homicide_rate}
-          </p>
-          <p className="dark-color">
-            Tourists:
-            {country.tourists}
-          </p>
-          <p className="light-color">
-            Exports:
-            {country.exports}
-          </p>
-          <p className="dark-color">
-            Capital:
-            {country.capital}
-          </p>
-          <p className="light-color">
-            Currency Code:
-            {country.currency.code}
-          </p>
-          <p className="dark-color">
-            Currency Name:
-            {country.currency.name}
-          </p>
-          <p className="light-color">
-            Employment in Industry:
-            {country.employment_industry}
-          </p>
-          <p className="dark-color">
-            Population:
-            {country.population}
-          </p>
+          <div className="info-row dark-color">
+            <p className="label">GDP:</p>
+            <p className="value">{country.gdp}</p>
+          </div>
+          <div className="info-row  light-color">
+            <p className="label">Sex Ratio:</p>
+            <p className="value">{country.sex_ratio}</p>
+          </div>
+          <div className="info-row dark-color">
+            <p className="label">Surface Area:</p>
+            <p className="value">{country.surface_area}</p>
+          </div>
+          <div className="info-row  light-color">
+            <p className="label">Life Expectancy (Male):</p>
+            <p className="value">{country.life_expectancy_male}</p>
+          </div>
+          <div className="info-row dark-color">
+            <p className="label">Unemployment Rate:</p>
+            <p className="value">{country.unemployment}</p>
+          </div>
+          <div className="info-row  light-color">
+            <p className="label">Imports:</p>
+            <p className="value">{country.imports}</p>
+          </div>
+          <div className="info-row dark-color">
+            <p className="label">Homicide Rate:</p>
+            <p className="value">{country.homicide_rate}</p>
+          </div>
+          <div className="info-row  light-color">
+            <p className="label">Tourists:</p>
+            <p className="value">{country.tourists}</p>
+          </div>
+          <div className="info-row dark-color">
+            <p className="label">Exports:</p>
+            <p className="value">{country.exports}</p>
+          </div>
+          <div className="info-row light-color">
+            <p className="label">Capital:</p>
+            <p className="value">{country.capital}</p>
+          </div>
+          <div className="info-row dark-color">
+            <p className="label">Currency Code:</p>
+            <p className="value">{country.currency.code}</p>
+          </div>
+          <div className="info-row light-color">
+            <p className="label">Currency Name:</p>
+            <p className="value">{country.currency.name}</p>
+          </div>
+          <div className="info-row dark-color">
+            <p className="label">Employment in Industry:</p>
+            <p className="value">{country.employment_industry}</p>
+          </div>
+          <div className="info-row light-color">
+            <p className="label">Population:</p>
+            <p className="value">{country.population}</p>
+          </div>
         </div>
       ))}
     </div>
