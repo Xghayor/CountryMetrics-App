@@ -34,6 +34,7 @@
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
     <li><a href="https://www.javascript.com/">JavaScript</a></li>
+    <li><a href="https://www.javascript.com/">React</a></li>
   </ul>
 </details>
 
@@ -51,7 +52,7 @@
 
 <br>
 
-- 
+- (Video Link)[https://www.loom.com/share/0bdff48b098c44bbbf987cc75468ef49?sid=6def48e8-8781-4516-b909-20dc76a660aa]
 
 - 
 
