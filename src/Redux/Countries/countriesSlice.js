@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const initialState = {
   loading: false,
@@ -13,17 +12,18 @@ export const countryData = createAsyncThunk(
     const apiKey = '3DPT6zJuhp6ivWqildtvnA==aOy3cSTtq3BUgEhT';
     const apiUrl = `https://api.api-ninjas.com/v1/country?name=${country}`;
 
-    const response = await axios.get(apiUrl, {
+    const response = await fetch(apiUrl, {
       headers: {
         'X-Api-Key': apiKey,
       },
     });
 
-    if (response.status !== 200) {
+    if (!response.ok) {
       throw new Error('Network response was not ok');
     }
 
-    return response.data;
+    const data = await response.json();
+    return data;
   },
 );
 
