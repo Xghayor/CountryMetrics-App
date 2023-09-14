@@ -1,4 +1,4 @@
-![SnapShot](Capture.PNG)
+![SnapShot](Capture.png)
 
 
 # 📗 Table of Contents
